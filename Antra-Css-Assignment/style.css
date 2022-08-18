@@ -1,0 +1,137 @@
+
+/* ---------- All ----------- */
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Navigation -------- */
+
+nav {
+    background-color: black;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 12%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin-right: 2rem;
+}
+
+/* ---------- Banner -------- */
+
+
+
+section {
+    background-color: #c6bfbf;
+}
+
+.bannerContent {
+    padding: 3% 10%;
+}
+
+.bannerTitle {
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.readMore {
+    color: rgb(44, 140, 249);
+    text-decoration: underline;
+    font-size: 1.05rem;
+}
+
+/* ---------- Article -------- */
+
+.article {
+    padding: 1% 10% 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+  }
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #0b4d14;
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.footerNav {
+    position: absolute;
+    left: 10%;
+}
+
+.socialMedia {
+    position: absolute;
+    right: 10%;
+}
+
+.socialMedia-list {
+    margin: 0;
+    margin-left: 2rem;
+}
+
+.socialMedia-icon {
+    color: white;
+    visibility: hidden;
+  }
+
+
+/* -------- Media Queries ----------- */
+
+@media (max-width: 750px) {
+    body {
+      font-size: 80%;
+    }
+  
+    .readMore {
+      font-size: 85%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    body {
+      font-size: 70%;
+    }
+  
+    .readMore {
+      font-size: 75%;
+    }
+    .article {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+    }
+  
+    header,
+    footer {
+      height: 2.7rem;
+    }
+    .socialMedia-list {
+      display: none;
+    }
+    .socialMedia-icon {
+      visibility: inherit;
+      margin-left: 2rem;
+    }
+  }
